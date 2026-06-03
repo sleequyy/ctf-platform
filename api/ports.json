@@ -1,0 +1,46 @@
+{
+  "challenges": [
+    {
+      "name": "foret",
+      "ports": [
+        2221,
+        2222,
+        2223
+      ],
+      "available": [
+        2222,
+        2223,
+        2221
+      ],
+      "in_use": []
+    },
+    {
+      "name": "labyrinthe",
+      "ports": [
+        2224,
+        2225,
+        2226
+      ],
+      "available": [
+        2224,
+        2225,
+        2226
+      ],
+      "in_use": []
+    },
+    {
+      "name": "monprofil",
+      "ports": [
+        2227,
+        2228,
+        2229
+      ],
+      "available": [
+        2227,
+        2228,
+        2229
+      ],
+      "in_use": []
+    }
+  ]
+}
