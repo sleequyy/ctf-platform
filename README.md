@@ -68,3 +68,19 @@ ctf-platform/
 ├── docker-compose.yml
 └── README.md
 \`\`\`
+
+## Architecture distribuee (mise a jour)
+
+L'API a ete deplacee sur un serveur dedie (Serveur B, 192.168.0.17),
+non dockerisee, qui pilote le Docker du Serveur A (192.168.0.16) via SSH.
+
+- Serveur A (192.168.0.16) : Docker + containers des challenges
+- Serveur B (192.168.0.17) : API Flask (Python natif)
+
+Code de la nouvelle API : voir dossier `api-distante/`
+
+### Nouveautes
+- Pool de 5000 ports (3000-7999)
+- Auto-destruction des containers apres 3h
+- Personnalisation : port interne, cle de securite, RAM, CPU
+- Monitoring : GET /api/active
